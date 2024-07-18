@@ -1,0 +1,122 @@
+*{
+    margin:0;
+}
+body{
+    background-color: #f5f5f9;;
+}
+.box{
+    background: white;
+    border-radius: 4px;
+    margin-top: 10px;
+    box-shadow: 0 0 0.375rem 0.25rem rgba(161, 172, 184, 0.15);
+}
+.icon{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.topbar{
+    width: 75%;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.boxFrame{
+    width: 75%;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    background: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.box .title{
+    background: linear-gradient(to right, #66CCFF, deepskyblue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.box .server{
+    background-color: rgba(0,0,0,0.01);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    cursor: default;
+}
+.box .server:hover{
+    background-color: rgba(0,0,0,0.04);
+    transition: 0.3s;
+}
+.box .server .right div{
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 15px;
+    color: grey;
+}
+a{
+    color: deepskyblue;
+    text-decoration: none;
+}
+@keyframes statusAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.box .server{
+    position: relative;
+}
+
+.box .server .right .online{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color: lime;
+    opacity: 1;
+    animation: statusAnimation 0.8s infinite;
+}
+.box .server .right .offline{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    border-radius: 50%;
+    background-color: red;
+    opacity: 1;
+    animation: statusAnimation 0.8s infinite;
+}
+.box .server .name{
+    font-size: 18px;
+    display: inline-block;
+}
+.boxFrame .box{
+    display: inline-block;
+}
+.fadeIn{
+    opacity: 1;
+    animation: fadeIn 0.7s;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
